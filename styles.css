@@ -1,0 +1,306 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #090909; /* Argentinian Blue background for the entire website */
+    color: #e0e0e0;
+    font-family: 'Forum', sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #181818;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-image {
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar Links */
+.navbar nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #0071e3;
+}
+
+.apply-button {
+    background-color: #333333;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+    background-color: #0071e3;
+    color: #fff;
+}
+
+/* Highlight Styling */
+.highlight {
+    color: #0071e3; /* Blue color */
+}
+
+/* Section Styling */
+section {
+    padding: 100px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #1f1f1f; /* Dark inner container for contrast */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease;
+    text-align: center;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* About Section Centering and Left-aligned List */
+#about .container {
+    text-align: center;
+}
+
+#about ul {
+    display: inline-block;
+    text-align: left; /* Keeps list items left-aligned for readability */
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+#about ul li strong {
+    color: #0071e3; /* Blue for the headings in each point */
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Typography */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+    color: #0071e3;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    color: #cccccc;
+}
+
+/* Questionnaire Form Styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #e0e0e0;
+    text-align: left;
+}
+
+.form-group textarea,
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #333333;
+    border: none;
+    border-radius: 6px;
+    color: #e0e0e0;
+    font-size: 1em;
+    resize: vertical; /* Allows resizing vertically but not horizontally */
+}
+
+textarea {
+    min-height: 80px; /* Ensures a consistent height for text areas */
+}
+
+button {
+    background-color: #080808;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
+
+/* Process Section Styling */
+.process ol {
+    list-style-type: none;
+    padding: 0;
+    counter-reset: li-counter;
+    text-align: left;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.process ol li {
+    margin: 20px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1.1em;
+    color: #b3b3b3;
+}
+
+.process ol li:before {
+    counter-increment: li-counter;
+    content: counter(li-counter) ".";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #0071e3;
+    font-size: 1.3em;
+}
+
+.process ol h3 {
+    font-size: 1.5em;
+    color: #0071e3;
+    margin-bottom: 10px;
+}
+
+.process ol p {
+    color: #e0e0e0;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Example Section Styling */
+.example .container {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 40px;
+}
+
+.example h2 {
+    color: #0071e3;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.example p {
+    color: #e0e0e0;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Example Steps List */
+.example-steps {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.example-steps li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 1.1em;
+    color: #b3b3b3;
+}
+
+.example-steps li:before {
+    content: "•"; /* Adds a custom bullet */
+    color: #0071e3;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.3em;
+}
+
+.example-steps li strong {
+    color: #0071e3;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+    
+    h1, h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1em;
+    }
+}
