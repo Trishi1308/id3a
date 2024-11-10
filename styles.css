@@ -148,6 +148,13 @@ p, ul li, ol li, .example-steps li {
     margin: 20px 0;
 }
 
+/* List Styling - All Sections Use Bullet Points */
+ul, ol {
+    list-style-type: disc; /* Sets bullet points instead of numbers */
+    padding-left: 20px;
+    text-align: left;
+}
+
 /* Remove bold from bullet points and list items */
 ul li, ol li {
     font-weight: normal;
@@ -218,9 +225,9 @@ button:hover {
 
 /* Process Section Styling */
 .process ol {
-    list-style-type: none;
+    list-style-type: disc; /* Bullet points for process list */
     padding: 0;
-    counter-reset: li-counter;
+    counter-reset: none; /* Removed number counter */
     text-align: left;
     margin: 0 auto;
     display: inline-block;
@@ -230,15 +237,6 @@ button:hover {
     margin: 20px 0;
     padding-left: 30px;
     position: relative;
-}
-
-.process ol li:before {
-    counter-increment: li-counter;
-    content: counter(li-counter) ".";
-    position: absolute;
-    left: 0;
-    font-size: 1em; /* Same as content size */
-    color: #4abcfa;
 }
 
 /* Example Section Styling */
