@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: #090909; /* Argentinian Blue background for the entire website */
+    background-color: #090909; /* Dark background for the entire website */
     color: #e0e0e0;
     font-family: 'Forum', sans-serif;
     line-height: 1.6;
@@ -31,13 +31,27 @@ body {
     z-index: 100;
 }
 
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo-image {
     height: 40px;
     transition: transform 0.3s ease;
+    margin-right: 8px; /* Adds space between logo image and text */
 }
 
 .logo-image:hover {
     transform: scale(1.1);
+}
+
+.logo-text {
+    font-family: 'Forum', sans-serif;
+    font-size: 1.5em;
+    color: #ffffff; /* Set font color to white */
+    font-weight: bold;
 }
 
 /* Navbar Links */
