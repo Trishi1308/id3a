@@ -109,12 +109,24 @@ section {
 }
 
 /* Section Title Styling */
-h1, h2, .process ol h3, .example h2 {
+h1, h2, .example h2 {
     font-size: 2em; /* Consistent size for all section titles */
     text-align: center;
     margin-bottom: 20px;
     font-weight: 400;
     color: #ffffff;
+}
+
+/* Process Section Title */
+.process h2 {
+    color: #4abcfa; /* Blue color for 'Our Process' title */
+    font-size: 2em;
+}
+
+/* Example Section Title Styling */
+.example h2 {
+    color: #4abcfa; /* Blue color for 'John’s Tractor Building Project' title */
+    font-size: 2em;
 }
 
 /* Content Text Styling */
@@ -222,6 +234,8 @@ button:hover {
     margin: 20px 0;
     padding-left: 30px;
     position: relative;
+    font-size: 1.1em;
+    color: #b3b3b3;
 }
 
 .process ol li:before {
@@ -229,7 +243,7 @@ button:hover {
     content: counter(li-counter) ".";
     position: absolute;
     left: 0;
-    font-size: 1.1em; /* Same as content size */
+    font-size: 1em; /* Same as content size */
     color: #4abcfa;
 }
 
@@ -255,7 +269,7 @@ button:hover {
         padding: 20px;
     }
     
-    h1, h2, .process ol h3, .example h2 {
+    h1, h2, .process h2, .example h2 {
         font-size: 1.8em;
     }
 
