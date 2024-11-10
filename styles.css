@@ -52,6 +52,8 @@ body {
     font-size: 1.5em;
     color: #ffffff; /* Set font color to white */
     font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #1b96f4; /* Sets underline color to new blue */
 }
 
 /* Navbar Links */
@@ -64,7 +66,7 @@ body {
 }
 
 .navbar nav a:hover {
-    color: #0071e3;
+    color: #1b96f4; /* Updated to new blue color */
 }
 
 .apply-button {
@@ -76,13 +78,13 @@ body {
 }
 
 .apply-button:hover {
-    background-color: #0071e3;
+    background-color: #1b96f4;
     color: #fff;
 }
 
 /* Highlight Styling */
 .highlight {
-    color: #0071e3; /* Blue color */
+    color: #1b96f4; /* Updated to new blue color */
 }
 
 /* Section Styling */
@@ -125,7 +127,7 @@ section {
 }
 
 #about ul li strong {
-    color: #0071e3; /* Blue for the headings in each point */
+    color: #1b96f4; /* Updated to new blue color */
 }
 
 /* Fade-In Animation */
@@ -148,7 +150,7 @@ h1 {
 
 h2 {
     font-size: 2em;
-    color: #0071e3;
+    color: #1b96f4; /* Updated to new blue color */
 }
 
 p {
@@ -230,13 +232,13 @@ button:hover {
     position: absolute;
     left: 0;
     font-weight: bold;
-    color: #0071e3;
+    color: #1b96f4; /* Updated to new blue color */
     font-size: 1.3em;
 }
 
 .process ol h3 {
     font-size: 1.5em;
-    color: #0071e3;
+    color: #1b96f4; /* Updated to new blue color */
     margin-bottom: 10px;
 }
 
@@ -254,7 +256,7 @@ button:hover {
 }
 
 .example h2 {
-    color: #0071e3;
+    color: #1b96f4; /* Updated to new blue color */
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -284,7 +286,7 @@ button:hover {
 
 .example-steps li:before {
     content: "•"; /* Adds a custom bullet */
-    color: #0071e3;
+    color: #1b96f4; /* Updated to new blue color */
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -292,7 +294,7 @@ button:hover {
 }
 
 .example-steps li strong {
-    color: #0071e3;
+    color: #1b96f4; /* Updated to new blue color */
 }
 
 /* Responsive Styling for Mobile */
