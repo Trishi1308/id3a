@@ -53,7 +53,7 @@ body {
     color: #ffffff; /* Set font color to white */
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: #1b96f4; /* Sets underline color to new blue */
+    text-decoration-color: #4abcfa; /* Sets underline color to new blue */
 }
 
 /* Navbar Links */
@@ -66,7 +66,7 @@ body {
 }
 
 .navbar nav a:hover {
-    color: #1b96f4; /* Updated to new blue color */
+    color: #4abcfa; /* Updated to new blue color */
 }
 
 .apply-button {
@@ -78,13 +78,13 @@ body {
 }
 
 .apply-button:hover {
-    background-color: #1b96f4;
+    background-color: #4abcfa;
     color: #fff;
 }
 
 /* Highlight Styling */
 .highlight {
-    color: #1b96f4; /* Updated to new blue color */
+    color: #4abcfa; /* Updated to new blue color */
 }
 
 /* Section Styling */
@@ -127,7 +127,7 @@ section {
 }
 
 #about ul li strong {
-    color: #1b96f4; /* Updated to new blue color */
+    color: #4abcfa; /* Updated to new blue color */
 }
 
 /* Fade-In Animation */
@@ -150,7 +150,7 @@ h1 {
 
 h2 {
     font-size: 2em;
-    color: #1b96f4; /* Updated to new blue color */
+    color: #4abcfa; /* Updated to new blue color */
 }
 
 p {
@@ -204,7 +204,7 @@ button {
 }
 
 button:hover {
-    background-color: #005bb5;
+    background-color: #4abcfa;
     transform: translateY(-2px);
 }
 
@@ -232,13 +232,13 @@ button:hover {
     position: absolute;
     left: 0;
     font-weight: bold;
-    color: #1b96f4; /* Updated to new blue color */
+    color: #4abcfa; /* Updated to new blue color */
     font-size: 1.3em;
 }
 
 .process ol h3 {
     font-size: 1.5em;
-    color: #1b96f4; /* Updated to new blue color */
+    color: #4abcfa; /* Updated to new blue color */
     margin-bottom: 10px;
 }
 
@@ -256,7 +256,7 @@ button:hover {
 }
 
 .example h2 {
-    color: #1b96f4; /* Updated to new blue color */
+    color: #4abcfa; /* Updated to new blue color */
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -286,7 +286,7 @@ button:hover {
 
 .example-steps li:before {
     content: "•"; /* Adds a custom bullet */
-    color: #1b96f4; /* Updated to new blue color */
+    color: #4abcfa; /* Updated to new blue color */
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -294,7 +294,7 @@ button:hover {
 }
 
 .example-steps li strong {
-    color: #1b96f4; /* Updated to new blue color */
+    color: #4abcfa; /* Updated to new blue color */
 }
 
 /* Responsive Styling for Mobile */
