@@ -71,7 +71,7 @@ body {
 
 /* Apply Button (Example Project) */
 .apply-button {
-    background-color: #333333; /* Make background transparent */
+    background-color: transparent; /* Make background transparent */
     color: #ffffff; /* Default text color */
     padding: 8px 16px;
     border-radius: 5px;
