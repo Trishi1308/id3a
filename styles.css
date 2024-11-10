@@ -71,11 +71,11 @@ body {
 
 /* Apply Button (Example Project) */
 .apply-button {
-    background-color: transparent; /* Make background transparent */
+    background-color: #333333; /* Make background transparent */
     color: #ffffff; /* Default text color */
     padding: 8px 16px;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: normal;
     transition: color 0.3s; /* Transition for text color only */
 }
 
