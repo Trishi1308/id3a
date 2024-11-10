@@ -108,6 +108,27 @@ section {
     transform: translateY(-5px);
 }
 
+/* Section Title Styling */
+h1, h2, .process ol h3, .example h2 {
+    font-size: 2em; /* Consistent size for all section titles */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/* Content Text Styling */
+p, ul li, ol li, .example-steps li {
+    font-size: 1.1em; /* Consistent size for all content and list items */
+    color: #cccccc;
+    margin: 20px 0;
+}
+
+/* Remove bold from bullet points and list items */
+ul li, ol li {
+    font-weight: normal;
+}
+
 /* About Section Centering and Left-aligned List */
 #about .container {
     text-align: center;
@@ -118,12 +139,6 @@ section {
     text-align: left; /* Keeps list items left-aligned for readability */
     padding-left: 20px;
     list-style-type: none;
-}
-
-#about ul li {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    color: #e0e0e0;
 }
 
 #about ul li strong {
@@ -142,21 +157,6 @@ h1, h2 {
     margin-bottom: 20px;
     font-weight: 400;
     color: #ffffff;
-}
-
-h1 {
-    font-size: 3em;
-}
-
-h2 {
-    font-size: 2em;
-    color: #4abcfa; /* Updated to new blue color */
-}
-
-p {
-    font-size: 1.1em;
-    margin: 20px 0;
-    color: #cccccc;
 }
 
 /* Questionnaire Form Styling */
@@ -222,8 +222,6 @@ button:hover {
     margin: 20px 0;
     padding-left: 30px;
     position: relative;
-    font-size: 1.1em;
-    color: #b3b3b3;
 }
 
 .process ol li:before {
@@ -231,21 +229,8 @@ button:hover {
     content: counter(li-counter) ".";
     position: absolute;
     left: 0;
-    font-weight: bold;
-    color: #4abcfa; /* Updated to new blue color */
-    font-size: 1.3em;
-}
-
-.process ol h3 {
-    font-size: 1.5em;
-    color: #4abcfa; /* Updated to new blue color */
-    margin-bottom: 10px;
-}
-
-.process ol p {
-    color: #e0e0e0;
-    font-size: 1.1em;
-    line-height: 1.6;
+    font-size: 1.1em; /* Same as content size */
+    color: #4abcfa;
 }
 
 /* Example Section Styling */
@@ -255,46 +240,8 @@ button:hover {
     padding: 40px;
 }
 
-.example h2 {
-    color: #4abcfa; /* Updated to new blue color */
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.example p {
-    color: #e0e0e0;
-    font-size: 1.1em;
-    margin-bottom: 20px;
-}
-
-/* Example Steps List */
-.example-steps {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.example-steps li {
-    margin-bottom: 15px;
-    padding-left: 20px;
-    position: relative;
-    font-size: 1.1em;
-    color: #b3b3b3;
-}
-
-.example-steps li:before {
-    content: "•"; /* Adds a custom bullet */
-    color: #4abcfa; /* Updated to new blue color */
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-    font-size: 1.3em;
-}
-
 .example-steps li strong {
-    color: #4abcfa; /* Updated to new blue color */
+    font-weight: normal; /* Removes bolding for list items */
 }
 
 /* Responsive Styling for Mobile */
@@ -308,11 +255,11 @@ button:hover {
         padding: 20px;
     }
     
-    h1, h2 {
+    h1, h2, .process ol h3, .example h2 {
         font-size: 1.8em;
     }
 
-    p {
+    p, ul li, ol li, .example-steps li {
         font-size: 1em;
     }
 
