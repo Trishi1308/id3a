@@ -69,17 +69,18 @@ body {
     color: #4abcfa; /* Updated to new blue color */
 }
 
+/* Apply Button (Example Project) */
 .apply-button {
-    background-color: #333333;
+    background-color: transparent; /* Make background transparent */
+    color: #ffffff; /* Default text color */
     padding: 8px 16px;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: color 0.3s; /* Transition for text color only */
 }
 
 .apply-button:hover {
-    background-color: #4abcfa;
-    color: #fff;
+    color: #4abcfa; /* Light blue color on hover */
 }
 
 /* Highlight Styling */
