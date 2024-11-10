@@ -117,6 +117,18 @@ h1, h2, .example h2 {
     color: #ffffff;
 }
 
+/* About Section Title */
+#about h2 {
+    color: #4abcfa; /* Blue color for 'About Idea.com' title */
+    font-size: 2em;
+}
+
+/* About Section Content */
+#about p, #about ul li {
+    color: #ffffff; /* White color for content in the About section */
+    font-size: 1.1em;
+}
+
 /* Process Section Title */
 .process h2 {
     color: #4abcfa; /* Blue color for 'Our Process' title */
@@ -139,22 +151,6 @@ p, ul li, ol li, .example-steps li {
 /* Remove bold from bullet points and list items */
 ul li, ol li {
     font-weight: normal;
-}
-
-/* About Section Centering and Left-aligned List */
-#about .container {
-    text-align: center;
-}
-
-#about ul {
-    display: inline-block;
-    text-align: left; /* Keeps list items left-aligned for readability */
-    padding-left: 20px;
-    list-style-type: none;
-}
-
-#about ul li strong {
-    color: #4abcfa; /* Updated to new blue color */
 }
 
 /* Fade-In Animation */
@@ -234,8 +230,6 @@ button:hover {
     margin: 20px 0;
     padding-left: 30px;
     position: relative;
-    font-size: 1.1em;
-    color: #b3b3b3;
 }
 
 .process ol li:before {
@@ -269,7 +263,7 @@ button:hover {
         padding: 20px;
     }
     
-    h1, h2, .process h2, .example h2 {
+    h1, h2, .process h2, .example h2, #about h2 {
         font-size: 1.8em;
     }
 
